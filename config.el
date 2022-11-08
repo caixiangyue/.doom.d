@@ -2,12 +2,19 @@
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
+(setq auto-save-default t)
+(run-with-idle-timer 5 t #'save-some-buffers t)
+(setq confirm-kill-emacs nil)
 
+;; language evniroment
+(set-language-environment 'UTF-8)
+(set-locale-environment "UTF-8")
+(define-coding-system-alias 'UTF-8 'utf-8)
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "Xiangyue Cai"
+      user-mail-address "caixiangyue007@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
